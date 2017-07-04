@@ -9,7 +9,7 @@
 import UIKit
 import QuartzCore
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CALayerDelegate {
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -28,13 +28,37 @@ class ViewController: UIViewController {
     myLayer.backgroundColor = UIColor.red.cgColor
     centerView.layer.addSublayer(myLayer)
     
+
     
     /// using layer than UIImageView display a img
-    let image = UIImage(named: "FTK.jpg")!
-    myLayer.contents = image.cgImage
+    /*
+     some layout property:
+         contentsReact contentsCenter  contentsGravity contentsScale  masksToBoundle ...
+     */
+//    let image = UIImage(named: "FTK.jpg")!
+//    myLayer.contents = image.cgImage
+//    myLayer.contentsGravity = kCAGravityResizeAspectFill // just like view's contentMode
+//    myLayer.masksToBounds = true
+//    myLayer.contentsRect = CGRect(x: 0.5, y: 0.5, width: 0.5, height: 0.5)
+    
+    
+    myLayer.delegate = self as? CALayerDelegate
+    myLayer.display()
     
   }
+  
+  func draw(_ layer: CALayer, in ctx: CGContext) {
 
+    print(#function)
+
+    let blue = UIColor.blue.cgColor
+    ctx.setFillColor(blue)
+    let red = UIColor.orange.cgColor
+    ctx.setStrokeColor(red)
+    ctx.setLineWidth(10)
+    ctx.addRect(layer.bounds)
+    ctx.drawPath(using: .fillStroke)
+  }
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.

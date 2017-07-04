@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "FTK.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "FTK.jpg",
       "scale" : "2x"
     },
     {
