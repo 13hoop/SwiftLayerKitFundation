@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B155C8691F994A069D322460 /* Pods_YRDownLoadManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B640C76F167D2EFC5243C /* Pods_YRDownLoadManager.framework */; };
+		B40599411F0FC95100E63050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40599401F0FC95100E63050 /* AppDelegate.swift */; };
+		B40599431F0FC95100E63050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40599421F0FC95100E63050 /* ViewController.swift */; };
+		B40599461F0FC95100E63050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40599441F0FC95100E63050 /* Main.storyboard */; };
+		B40599481F0FC95100E63050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40599471F0FC95100E63050 /* Assets.xcassets */; };
+		B405994B1F0FC95100E63050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40599491F0FC95100E63050 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		034B640C76F167D2EFC5243C /* Pods_YRDownLoadManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YRDownLoadManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C21BB1C6B704533376CA68C /* Pods-YRDownLoadManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YRDownLoadManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-YRDownLoadManager/Pods-YRDownLoadManager.release.xcconfig"; sourceTree = "<group>"; };
+		B405993D1F0FC95100E63050 /* YRDownLoadManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YRDownLoadManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40599401F0FC95100E63050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B40599421F0FC95100E63050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B40599451F0FC95100E63050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B40599471F0FC95100E63050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B405994A1F0FC95100E63050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B405994C1F0FC95100E63050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA5D75C4F00D48A3D9062664 /* Pods-YRDownLoadManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YRDownLoadManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YRDownLoadManager/Pods-YRDownLoadManager.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B405993A1F0FC95100E63050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B155C8691F994A069D322460 /* Pods_YRDownLoadManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B40599341F0FC95100E63050 = {
+			isa = PBXGroup;
+			children = (
+				B405993F1F0FC95100E63050 /* YRDownLoadManager */,
+				B405993E1F0FC95100E63050 /* Products */,
+				EB2B91FE46CE47ECA83A10DA /* Pods */,
+				F6EE975243E10A92F19BDEF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B405993E1F0FC95100E63050 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B405993D1F0FC95100E63050 /* YRDownLoadManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B405993F1F0FC95100E63050 /* YRDownLoadManager */ = {
+			isa = PBXGroup;
+			children = (
+				B40599401F0FC95100E63050 /* AppDelegate.swift */,
+				B40599421F0FC95100E63050 /* ViewController.swift */,
+				B40599441F0FC95100E63050 /* Main.storyboard */,
+				B40599471F0FC95100E63050 /* Assets.xcassets */,
+				B40599491F0FC95100E63050 /* LaunchScreen.storyboard */,
+				B405994C1F0FC95100E63050 /* Info.plist */,
+			);
+			path = YRDownLoadManager;
+			sourceTree = "<group>";
+		};
+		EB2B91FE46CE47ECA83A10DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA5D75C4F00D48A3D9062664 /* Pods-YRDownLoadManager.debug.xcconfig */,
+				3C21BB1C6B704533376CA68C /* Pods-YRDownLoadManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6EE975243E10A92F19BDEF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				034B640C76F167D2EFC5243C /* Pods_YRDownLoadManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B405993C1F0FC95100E63050 /* YRDownLoadManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B405994F1F0FC95100E63050 /* Build configuration list for PBXNativeTarget "YRDownLoadManager" */;
+			buildPhases = (
+				DD4AA37025076A460B52DCB2 /* [CP] Check Pods Manifest.lock */,
+				B40599391F0FC95100E63050 /* Sources */,
+				B405993A1F0FC95100E63050 /* Frameworks */,
+				B405993B1F0FC95100E63050 /* Resources */,
+				AA512748417B0F79417005C2 /* [CP] Embed Pods Frameworks */,
+				8B470A814888675C7AE62BEB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YRDownLoadManager;
+			productName = YRDownLoadManager;
+			productReference = B405993D1F0FC95100E63050 /* YRDownLoadManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B40599351F0FC95100E63050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = YongRen;
+				TargetAttributes = {
+					B405993C1F0FC95100E63050 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B40599381F0FC95100E63050 /* Build configuration list for PBXProject "YRDownLoadManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B40599341F0FC95100E63050;
+			productRefGroup = B405993E1F0FC95100E63050 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B405993C1F0FC95100E63050 /* YRDownLoadManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B405993B1F0FC95100E63050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B405994B1F0FC95100E63050 /* LaunchScreen.storyboard in Resources */,
+				B40599481F0FC95100E63050 /* Assets.xcassets in Resources */,
+				B40599461F0FC95100E63050 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B470A814888675C7AE62BEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YRDownLoadManager/Pods-YRDownLoadManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA512748417B0F79417005C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YRDownLoadManager/Pods-YRDownLoadManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YRDownLoadManager/Pods-YRDownLoadManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD4AA37025076A460B52DCB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YRDownLoadManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B40599391F0FC95100E63050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40599431F0FC95100E63050 /* ViewController.swift in Sources */,
+				B40599411F0FC95100E63050 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B40599441F0FC95100E63050 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B40599451F0FC95100E63050 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B40599491F0FC95100E63050 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B405994A1F0FC95100E63050 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B405994D1F0FC95100E63050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B405994E1F0FC95100E63050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B40599501F0FC95100E63050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA5D75C4F00D48A3D9062664 /* Pods-YRDownLoadManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YRDownLoadManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.13hoop.YRDownLoadManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B40599511F0FC95100E63050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C21BB1C6B704533376CA68C /* Pods-YRDownLoadManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YRDownLoadManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.13hoop.YRDownLoadManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B40599381F0FC95100E63050 /* Build configuration list for PBXProject "YRDownLoadManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B405994D1F0FC95100E63050 /* Debug */,
+				B405994E1F0FC95100E63050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B405994F1F0FC95100E63050 /* Build configuration list for PBXNativeTarget "YRDownLoadManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40599501F0FC95100E63050 /* Debug */,
+				B40599511F0FC95100E63050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B40599351F0FC95100E63050 /* Project object */;
+}

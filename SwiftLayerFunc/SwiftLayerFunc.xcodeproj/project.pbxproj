@@ -12,7 +12,8 @@
 		B46813F81F0B698100EFF685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46813F61F0B698100EFF685 /* Main.storyboard */; };
 		B46813FA1F0B698100EFF685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46813F91F0B698100EFF685 /* Assets.xcassets */; };
 		B46813FD1F0B698100EFF685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46813FB1F0B698100EFF685 /* LaunchScreen.storyboard */; };
-		B46814051F0B6DF400EFF685 /* FTK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B46814041F0B6DF400EFF685 /* FTK.jpg */; };
+		B46814071F0B901700EFF685 /* LayerTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46814061F0B901700EFF685 /* LayerTestViewController.swift */; };
+		B46814091F0B907F00EFF685 /* YRStockChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46814081F0B907F00EFF685 /* YRStockChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		B46813F91F0B698100EFF685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B46813FC1F0B698100EFF685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B46813FE1F0B698100EFF685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B46814041F0B6DF400EFF685 /* FTK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FTK.jpg; sourceTree = "<group>"; };
+		B46814061F0B901700EFF685 /* LayerTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerTestViewController.swift; sourceTree = "<group>"; };
+		B46814081F0B907F00EFF685 /* YRStockChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YRStockChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,10 @@
 			children = (
 				B46813F21F0B698100EFF685 /* AppDelegate.swift */,
 				B46813F41F0B698100EFF685 /* ViewController.swift */,
+				B46814081F0B907F00EFF685 /* YRStockChartView.swift */,
+				B46814061F0B901700EFF685 /* LayerTestViewController.swift */,
 				B46813F61F0B698100EFF685 /* Main.storyboard */,
 				B46813F91F0B698100EFF685 /* Assets.xcassets */,
-				B46814041F0B6DF400EFF685 /* FTK.jpg */,
 				B46813FB1F0B698100EFF685 /* LaunchScreen.storyboard */,
 				B46813FE1F0B698100EFF685 /* Info.plist */,
 			);
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					B46813EE1F0B698100EFF685 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = LWXVGNDC4Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -129,7 +133,6 @@
 				B46813FD1F0B698100EFF685 /* LaunchScreen.storyboard in Resources */,
 				B46813FA1F0B698100EFF685 /* Assets.xcassets in Resources */,
 				B46813F81F0B698100EFF685 /* Main.storyboard in Resources */,
-				B46814051F0B6DF400EFF685 /* FTK.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B46813F51F0B698100EFF685 /* ViewController.swift in Sources */,
+				B46814091F0B907F00EFF685 /* YRStockChartView.swift in Sources */,
 				B46813F31F0B698100EFF685 /* AppDelegate.swift in Sources */,
+				B46814071F0B901700EFF685 /* LayerTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LWXVGNDC4Q;
 				INFOPLIST_FILE = SwiftLayerFunc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.13hoop.SwiftLayerFunc;
@@ -278,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LWXVGNDC4Q;
 				INFOPLIST_FILE = SwiftLayerFunc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.13hoop.SwiftLayerFunc;
