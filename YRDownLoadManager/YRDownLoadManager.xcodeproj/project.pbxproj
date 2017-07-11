@@ -13,6 +13,7 @@
 		B40599461F0FC95100E63050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40599441F0FC95100E63050 /* Main.storyboard */; };
 		B40599481F0FC95100E63050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40599471F0FC95100E63050 /* Assets.xcassets */; };
 		B405994B1F0FC95100E63050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40599491F0FC95100E63050 /* LaunchScreen.storyboard */; };
+		B4538F361F14AD3600F670FB /* YRDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4538F351F14AD3600F670FB /* YRDownloadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		B40599471F0FC95100E63050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B405994A1F0FC95100E63050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B405994C1F0FC95100E63050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4538F351F14AD3600F670FB /* YRDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YRDownloadManager.swift; sourceTree = "<group>"; };
 		BA5D75C4F00D48A3D9062664 /* Pods-YRDownLoadManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YRDownLoadManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YRDownLoadManager/Pods-YRDownLoadManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				B40599471F0FC95100E63050 /* Assets.xcassets */,
 				B40599491F0FC95100E63050 /* LaunchScreen.storyboard */,
 				B405994C1F0FC95100E63050 /* Info.plist */,
+				B4538F351F14AD3600F670FB /* YRDownloadManager.swift */,
 			);
 			path = YRDownLoadManager;
 			sourceTree = "<group>";
@@ -124,6 +127,11 @@
 					B405993C1F0FC95100E63050 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -217,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4538F361F14AD3600F670FB /* YRDownloadManager.swift in Sources */,
 				B40599431F0FC95100E63050 /* ViewController.swift in Sources */,
 				B40599411F0FC95100E63050 /* AppDelegate.swift in Sources */,
 			);
@@ -384,6 +393,7 @@
 				B40599511F0FC95100E63050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
