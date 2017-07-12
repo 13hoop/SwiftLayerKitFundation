@@ -36,7 +36,7 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96e-Ab-jkR">
                                 <rect key="frame" x="16" y="69" width="343" height="30"/>
-                                <mutableString key="text">https://r1---sn-ogueln7d.googlevideo.com/videoplayback?expire=1499781907&amp;mv=m&amp;mt=1499760219&amp;ms=au&amp;id=o-AM5z5l80pan_x7yZ-Iyi-FbCseGO9PRh5494k8MIb9OL&amp;pl=23&amp;mn=sn-ogueln7d&amp;mm=31&amp;source=youtube&amp;mime=video%2Fmp4&amp;ip=106.187.98.213&amp;requiressl=yes&amp;itag=266&amp;clen=975535366&amp;keepalive=yes&amp;key=yt6&amp;ipbits=0&amp;signature=59F0DA5498DE7C95E7B98ACED2D497291F759F69.2F9608ABC9576363DF915244CE9E4A4784A660A4&amp;dur=702.785&amp;initcwndbps=2195000&amp;ei=s4ZkWf6iK4PP4AKKu4ioBQ&amp;lmt=1441507661456266&amp;sparams=clen%2Cdur%2Cei%2Cgir%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Ckeepalive%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Crequiressl%2Csource%2Cexpire&amp;gir=yes</mutableString>
+                                <string key="text">https://r1---sn-ogueln7d.googlevideo.com/videoplayback?expire=1499781907&amp;mv=m&amp;mt=1499760219&amp;ms=au&amp;id=o-AM5z5l80pan_x7yZ-Iyi-FbCseGO9PRh5494k8MIb9OL&amp;pl=23&amp;mn=sn-ogueln7d&amp;mm=31&amp;source=youtube&amp;mime=video%2Fmp4&amp;ip=106.187.98.213&amp;requiressl=yes&amp;itag=266&amp;clen=975535366&amp;keepalive=yes&amp;key=yt6&amp;ipbits=0&amp;signature=59F0DA5498DE7C95E7B98ACED2D497291F759F69.2F9608ABC9576363DF915244CE9E4A4784A660A4&amp;dur=702.785&amp;initcwndbps=2195000&amp;ei=s4ZkWf6iK4PP4AKKu4ioBQ&amp;lmt=1441507661456266&amp;sparams=clen%2Cdur%2Cei%2Cgir%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Ckeepalive%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Crequiressl%2Csource%2Cexpire&amp;gir=yes</string>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -44,10 +44,25 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SLp-PT-zd6">
                                 <rect key="frame" x="16" y="221" width="343" height="2"/>
                             </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhX-gd-fR0">
+                                <rect key="frame" x="146" y="499" width="83" height="43"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="51p-6e-ge7"/>
+                                    <constraint firstAttribute="width" constant="83" id="8e8-x9-c87"/>
+                                </constraints>
+                                <state key="normal" title="cancle">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancleBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uoI-aD-Cz1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="SLp-PT-zd6" firstAttribute="leading" secondItem="96e-Ab-jkR" secondAttribute="leading" id="Cmt-je-v59"/>
+                            <constraint firstItem="VhX-gd-fR0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DRX-WO-CcS"/>
                             <constraint firstItem="96e-Ab-jkR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JTJ-XT-omc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mBD-F9-s4E" secondAttribute="bottom" constant="51" id="JbK-d5-kVw"/>
                             <constraint firstItem="96e-Ab-jkR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZKB-Mf-kL1"/>
@@ -56,6 +71,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="96e-Ab-jkR" secondAttribute="trailing" id="iew-ud-YIB"/>
                             <constraint firstItem="SLp-PT-zd6" firstAttribute="centerX" secondItem="96e-Ab-jkR" secondAttribute="centerX" id="ilt-Uq-3Gi"/>
                             <constraint firstItem="mBD-F9-s4E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j6L-Ao-LX2"/>
+                            <constraint firstItem="mBD-F9-s4E" firstAttribute="top" secondItem="VhX-gd-fR0" secondAttribute="bottom" constant="29" id="lwJ-Td-zvz"/>
+                            <constraint firstItem="mBD-F9-s4E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tNH-FG-go2"/>
                             <constraint firstItem="SLp-PT-zd6" firstAttribute="trailing" secondItem="96e-Ab-jkR" secondAttribute="trailing" id="yw5-kQ-rRr"/>
                         </constraints>
                     </view>
