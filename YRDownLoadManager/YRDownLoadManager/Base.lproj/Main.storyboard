@@ -22,18 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBD-F9-s4E">
-                                <rect key="frame" x="146" y="571" width="83" height="45"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="83" id="fos-qc-lpa"/>
-                                    <constraint firstAttribute="height" constant="45" id="nel-WU-RWG"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tic-TW-KEY"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96e-Ab-jkR">
                                 <rect key="frame" x="16" y="69" width="343" height="30"/>
                                 <string key="text">https://r1---sn-ogueln7d.googlevideo.com/videoplayback?expire=1499781907&amp;mv=m&amp;mt=1499760219&amp;ms=au&amp;id=o-AM5z5l80pan_x7yZ-Iyi-FbCseGO9PRh5494k8MIb9OL&amp;pl=23&amp;mn=sn-ogueln7d&amp;mm=31&amp;source=youtube&amp;mime=video%2Fmp4&amp;ip=106.187.98.213&amp;requiressl=yes&amp;itag=266&amp;clen=975535366&amp;keepalive=yes&amp;key=yt6&amp;ipbits=0&amp;signature=59F0DA5498DE7C95E7B98ACED2D497291F759F69.2F9608ABC9576363DF915244CE9E4A4784A660A4&amp;dur=702.785&amp;initcwndbps=2195000&amp;ei=s4ZkWf6iK4PP4AKKu4ioBQ&amp;lmt=1441507661456266&amp;sparams=clen%2Cdur%2Cei%2Cgir%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Ckeepalive%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Crequiressl%2Csource%2Cexpire&amp;gir=yes</string>
@@ -44,13 +32,30 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SLp-PT-zd6">
                                 <rect key="frame" x="16" y="221" width="343" height="2"/>
                             </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="be9-xj-YzQ">
+                                <rect key="frame" x="150.5" y="617" width="73" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81t-NH-aVI">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="start"/>
+                                        <connections>
+                                            <action selector="startClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOs-LM-cEk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBD-F9-s4E">
+                                        <rect key="frame" x="42" y="0.0" width="31" height="30"/>
+                                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="stop"/>
+                                        <connections>
+                                            <action selector="stopClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ben-jo-5Vk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhX-gd-fR0">
-                                <rect key="frame" x="146" y="499" width="83" height="43"/>
+                                <rect key="frame" x="165" y="318.5" width="45" height="30"/>
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="51p-6e-ge7"/>
-                                    <constraint firstAttribute="width" constant="83" id="8e8-x9-c87"/>
-                                </constraints>
                                 <state key="normal" title="cancle">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -62,17 +67,16 @@
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="SLp-PT-zd6" firstAttribute="leading" secondItem="96e-Ab-jkR" secondAttribute="leading" id="Cmt-je-v59"/>
-                            <constraint firstItem="VhX-gd-fR0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DRX-WO-CcS"/>
+                            <constraint firstItem="VhX-gd-fR0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cmy-zt-cgC"/>
                             <constraint firstItem="96e-Ab-jkR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JTJ-XT-omc"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mBD-F9-s4E" secondAttribute="bottom" constant="51" id="JbK-d5-kVw"/>
                             <constraint firstItem="96e-Ab-jkR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZKB-Mf-kL1"/>
                             <constraint firstItem="SLp-PT-zd6" firstAttribute="top" secondItem="96e-Ab-jkR" secondAttribute="bottom" constant="122" id="bFl-Cj-SU0"/>
                             <constraint firstItem="96e-Ab-jkR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="gT4-bc-lJE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="be9-xj-YzQ" secondAttribute="bottom" constant="20" id="hsz-53-Nwa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="96e-Ab-jkR" secondAttribute="trailing" id="iew-ud-YIB"/>
                             <constraint firstItem="SLp-PT-zd6" firstAttribute="centerX" secondItem="96e-Ab-jkR" secondAttribute="centerX" id="ilt-Uq-3Gi"/>
-                            <constraint firstItem="mBD-F9-s4E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j6L-Ao-LX2"/>
-                            <constraint firstItem="mBD-F9-s4E" firstAttribute="top" secondItem="VhX-gd-fR0" secondAttribute="bottom" constant="29" id="lwJ-Td-zvz"/>
-                            <constraint firstItem="mBD-F9-s4E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tNH-FG-go2"/>
+                            <constraint firstItem="be9-xj-YzQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qJY-5r-CaR"/>
+                            <constraint firstItem="VhX-gd-fR0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sAm-G7-2rA"/>
                             <constraint firstItem="SLp-PT-zd6" firstAttribute="trailing" secondItem="96e-Ab-jkR" secondAttribute="trailing" id="yw5-kQ-rRr"/>
                         </constraints>
                     </view>

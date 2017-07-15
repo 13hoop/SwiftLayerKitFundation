@@ -65,11 +65,11 @@
 			children = (
 				B40599401F0FC95100E63050 /* AppDelegate.swift */,
 				B40599421F0FC95100E63050 /* ViewController.swift */,
-				B40599441F0FC95100E63050 /* Main.storyboard */,
-				B40599471F0FC95100E63050 /* Assets.xcassets */,
-				B40599491F0FC95100E63050 /* LaunchScreen.storyboard */,
-				B405994C1F0FC95100E63050 /* Info.plist */,
 				B4538F351F14AD3600F670FB /* YRDownloadManager.swift */,
+				B40599471F0FC95100E63050 /* Assets.xcassets */,
+				B405994C1F0FC95100E63050 /* Info.plist */,
+				B40599491F0FC95100E63050 /* LaunchScreen.storyboard */,
+				B40599441F0FC95100E63050 /* Main.storyboard */,
 			);
 			path = YRDownLoadManager;
 			sourceTree = "<group>";
