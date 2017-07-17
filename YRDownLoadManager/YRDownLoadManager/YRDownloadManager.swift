@@ -14,62 +14,53 @@ import UIKit
   @objc optional func errorMsg(msg: String?)
 }
 
+class YRDownload {
+  let url: URL!
+  init(urlStr: String) {
+    self.url = URL(string: urlStr)!
+  }
+  
+  var task: URLSessionDownloadTask?
+  var resumeData: Data?
+  
+  var progress: Float = 0.0
+  var isDownloading = false
+}
+
 
 class YRDownloadManager: NSObject {
   
   static let `default` = YRDownloadManager()
   var delegate: YRDownLoadDelegate?
   
-  private var session: URLSession!
-  private var bgSession: URLSession!
+  lazy var session: URLSession = {
+    let config = URLSessionConfiguration.default
+    return URLSession(configuration: config, delegate: self, delegateQueue: nil)
+  }()
   
-  private var dataTask: URLSessionDataTask?
-  fileprivate var downloadTask: URLSessionDownloadTask?
-
-  // start
-  func startBackgroundDownload(urlStr: String, fileName: String) {
-    
-    let url = URL(string: urlStr)
-    let request = URLRequest(url: url!, cachePolicy: NSURLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval: 3000)
-    let backgroundConfig = URLSessionConfiguration.background(withIdentifier: urlStr)
-    
+  lazy var bgSession: URLSession = {
+    let config = URLSessionConfiguration.background(withIdentifier: "com.yongren,bgSession")
     // debuge
-    backgroundConfig.timeoutIntervalForResource = TimeInterval(20)
-    backgroundConfig.timeoutIntervalForRequest = TimeInterval(3)
-    
-    let operationQueue = OperationQueue()
-    operationQueue.name = "yongren.backgroundSessionQueen"
-    operationQueue.maxConcurrentOperationCount = 3;
-    
-    if bgSession == nil {
-//      print(" sigletion session ")
-      bgSession = URLSession(configuration: backgroundConfig, delegate: self, delegateQueue: operationQueue)
-    }
-    
-    downloadTask = bgSession.downloadTask(with: request)
-    downloadTask?.resume()
+    config.timeoutIntervalForResource = TimeInterval(20)
+    config.timeoutIntervalForRequest = TimeInterval(3)
+    return URLSession(configuration: config, delegate: self, delegateQueue: nil)
+  }()
+  
+  var activeTask: [URL: YRDownload] = [:]
+  
+  // start
+  func startBackgroundDownload(download: YRDownload) {
+    let request = URLRequest(url: download.url, cachePolicy: NSURLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval: 3000)
+    let downloadTask = bgSession.downloadTask(with: request)
+    downloadTask.resume()
+    download.isDownloading = true
+    download.task = downloadTask
+    activeTask[download.url] = download
   }
   
   // pause
   func pauseDownload() {
     
-    if let task = downloadTask {
-
-      print(#function, task.state)
-      switch task.state {
-      case .running:
-        print(" running ")
-        task.suspend()
-      case .suspended:
-        print(" suspended ")
-        task.resume()
-      case .canceling:
-        print(" canceling ")
-        task.resume()
-      case .completed:
-        print(" completed ")
-      }
-    }
     
   }
   
@@ -169,3 +160,4 @@ extension YRDownloadManager: URLSessionDownloadDelegate {
     print(" >>> temp ", location.debugDescription, "    ~~~ ", downloadTask.state.rawValue)
   }
 }
+

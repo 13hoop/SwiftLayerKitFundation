@@ -31,8 +31,9 @@ class ViewController: UIViewController {
       return
     }
     
+    let download = YRDownload(urlStr: urlStr)
     YRDownloadManager.default.delegate = self
-    YRDownloadManager.default.startBackgroundDownload(urlStr: urlStr, fileName: "fileName")
+    YRDownloadManager.default.startBackgroundDownload(download: download)
   }
 
   @IBAction func stopClicked(_ sender: Any) {
@@ -43,31 +44,12 @@ class ViewController: UIViewController {
     
     print(#function)
 
-//    guard let task = downloadTask else {
-//      print(" no task for cancle ... ")
-//      return
-//    }
-//    
-//    print(" cancle: ", task.state.rawValue)
-//    switch task.state {
-//    case .running:
-//      print(" running ~> cancle ")
-//      task.cancel()
-//    case .suspended:
-//      print(" suspended ")
-//      task.resume()
-//    case .canceling:
-//      print(" canceling ~> resumeData")
-//      if let resumeData = readFile() {
-//        sharedBgSession.downloadTask(withResumeData: resumeData)
-//      }
-//    case .completed:
-//      print(" completed ")
-//      if let resumeData = readFile() {
-//        sharedBgSession.downloadTask(withResumeData: resumeData).resume()
-//      }
-//    }
   }
+  
+  
+  @IBAction func crashedClicked(_ sender: Any) {
+  }
+  
 }
 
 extension ViewController: YRDownLoadDelegate {

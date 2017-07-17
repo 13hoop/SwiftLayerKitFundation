@@ -63,18 +63,31 @@
                                     <action selector="cancleBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uoI-aD-Cz1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TX4-nd-9Nc">
+                                <rect key="frame" x="19" y="318" width="41" height="30"/>
+                                <state key="normal" title="Crash">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="crashedClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m54-i1-lcu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="VhX-gd-fR0" firstAttribute="centerY" secondItem="TX4-nd-9Nc" secondAttribute="centerY" id="29B-nE-4ON"/>
                             <constraint firstItem="SLp-PT-zd6" firstAttribute="leading" secondItem="96e-Ab-jkR" secondAttribute="leading" id="Cmt-je-v59"/>
                             <constraint firstItem="VhX-gd-fR0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cmy-zt-cgC"/>
                             <constraint firstItem="96e-Ab-jkR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JTJ-XT-omc"/>
+                            <constraint firstItem="TX4-nd-9Nc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="P8h-hN-cCf"/>
                             <constraint firstItem="96e-Ab-jkR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZKB-Mf-kL1"/>
                             <constraint firstItem="SLp-PT-zd6" firstAttribute="top" secondItem="96e-Ab-jkR" secondAttribute="bottom" constant="122" id="bFl-Cj-SU0"/>
+                            <constraint firstItem="VhX-gd-fR0" firstAttribute="leading" secondItem="TX4-nd-9Nc" secondAttribute="trailing" constant="105" id="fj6-Ur-Btg"/>
                             <constraint firstItem="96e-Ab-jkR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="gT4-bc-lJE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="be9-xj-YzQ" secondAttribute="bottom" constant="20" id="hsz-53-Nwa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="96e-Ab-jkR" secondAttribute="trailing" id="iew-ud-YIB"/>
                             <constraint firstItem="SLp-PT-zd6" firstAttribute="centerX" secondItem="96e-Ab-jkR" secondAttribute="centerX" id="ilt-Uq-3Gi"/>
+                            <constraint firstItem="TX4-nd-9Nc" firstAttribute="height" secondItem="VhX-gd-fR0" secondAttribute="height" id="jyc-Ml-kFP"/>
                             <constraint firstItem="be9-xj-YzQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qJY-5r-CaR"/>
                             <constraint firstItem="VhX-gd-fR0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sAm-G7-2rA"/>
                             <constraint firstItem="SLp-PT-zd6" firstAttribute="trailing" secondItem="96e-Ab-jkR" secondAttribute="trailing" id="yw5-kQ-rRr"/>
