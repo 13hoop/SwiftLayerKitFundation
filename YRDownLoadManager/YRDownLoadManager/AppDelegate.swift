@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
+  var bgSessionCompletionHandler: (() -> Void)?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
@@ -25,8 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
   func applicationDidEnterBackground(_ application: UIApplication) {
-    let vc = window?.rootViewController as! ViewController
-//    print(vc.sharedBgSession.configuration.identifier!)
   }
  
 
@@ -45,7 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   /// 应用处于后台，且后台任务下载完成时回调  那么这里跟另一session did recieve 哪个更最终呢？？？
   func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
     
-    print(" handle bg session ")
+    print(#function , " -- handle bg session :", identifier)
+    bgSessionCompletionHandler = completionHandler
     
   }
 

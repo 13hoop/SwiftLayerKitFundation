@@ -74,8 +74,8 @@ app退到后台，配置好了的bgSession，所以会在一个单独的线程�
 `didFinishLaunchingWithOptions:`中获取`identifier` -> 创建session -> 重复上边步骤...
 
 3 断点续传问题
-理论上来讲，通过关联到的session，配合`partOFDataRecieved.tmp` + `resumeData`就能完成，所以至少涉及到对resumeData的获取保存和对已下载的临时文件的保存
-
+理论上来讲，通过关联到的session，配合`partOFDataRecieved.tmp` + `resumeData`就能完成
+(在`NSURLConnection`时代，单独设置的`HTTP:Range`等信息都被统一包裹在了此文件中)，所以至少涉及到对resumeData的获取保存和对已下载的临时文件的保存
 
 
   接下来聚焦于2个最关键问题：   
