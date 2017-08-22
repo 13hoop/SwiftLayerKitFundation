@@ -14,6 +14,7 @@
 		B40599481F0FC95100E63050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40599471F0FC95100E63050 /* Assets.xcassets */; };
 		B405994B1F0FC95100E63050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40599491F0FC95100E63050 /* LaunchScreen.storyboard */; };
 		B4538F361F14AD3600F670FB /* YRDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4538F351F14AD3600F670FB /* YRDownloadManager.swift */; };
+		B4A2832D1F3AC37D00BFB990 /* SessionWrapperOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2832C1F3AC37D00BFB990 /* SessionWrapperOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B405994A1F0FC95100E63050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B405994C1F0FC95100E63050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4538F351F14AD3600F670FB /* YRDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YRDownloadManager.swift; sourceTree = "<group>"; };
+		B4A2832C1F3AC37D00BFB990 /* SessionWrapperOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionWrapperOperation.swift; sourceTree = "<group>"; };
 		BA5D75C4F00D48A3D9062664 /* Pods-YRDownLoadManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YRDownLoadManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YRDownLoadManager/Pods-YRDownLoadManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				B40599401F0FC95100E63050 /* AppDelegate.swift */,
 				B40599421F0FC95100E63050 /* ViewController.swift */,
 				B4538F351F14AD3600F670FB /* YRDownloadManager.swift */,
+				B4A2832C1F3AC37D00BFB990 /* SessionWrapperOperation.swift */,
 				B40599471F0FC95100E63050 /* Assets.xcassets */,
 				B405994C1F0FC95100E63050 /* Info.plist */,
 				B40599491F0FC95100E63050 /* LaunchScreen.storyboard */,
@@ -227,6 +230,7 @@
 			files = (
 				B4538F361F14AD3600F670FB /* YRDownloadManager.swift in Sources */,
 				B40599431F0FC95100E63050 /* ViewController.swift in Sources */,
+				B4A2832D1F3AC37D00BFB990 /* SessionWrapperOperation.swift in Sources */,
 				B40599411F0FC95100E63050 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
